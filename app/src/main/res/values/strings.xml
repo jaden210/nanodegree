@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Nanodegree Program</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="streamer">Spotify App</string>
+    <string name="scores">Scores App</string>
+    <string name="library">Library App</string>
+    <string name="build">Build It Bigger</string>
+    <string name="xyz">XYZ Reader</string>
+    <string name="capstone">Capstone: My Own App</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_movies">Movies</string>
+    <string name="hello_world">Hello world!</string>
 </resources>

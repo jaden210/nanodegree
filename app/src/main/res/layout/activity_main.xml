@@ -15,94 +15,104 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Spotify Streamer"
-            android:id="@+id/spotify"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="150dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#ff3dcedd"
-            android:shadowColor="#ff061930"
-            android:onClick="defaultToast"
-            android:textColor="@android:color/primary_text_light" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Scores App"
-            android:id="@+id/scores"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#ff3dcedd"
-            android:shadowColor="#ff061930"
-            android:onClick="defaultToast"
-            android:textColor="@android:color/primary_text_light" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Popular Movies"
+                android:id="@+id/popMovies"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/b_color"
+                android:shadowColor="@color/button_shadow"
+                android:onClick="movieScreen"
+                android:textColor="@android:color/primary_text_light" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Library App"
-            android:id="@+id/library"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#ff3dcedd"
-            android:shadowColor="#ff061930"
-            android:onClick="defaultToast"
-            android:textColor="@android:color/primary_text_light" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/scores"
+                android:id="@+id/scores"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/b_color"
+                android:shadowColor="@color/button_shadow"
+                android:onClick="defaultToast"
+                android:textColor="@android:color/primary_text_light" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Build It Bigger"
-            android:id="@+id/build_it"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#ff3dcedd"
-            android:shadowColor="#ff061930"
-            android:onClick="defaultToast"
-            android:textColor="@android:color/primary_text_light" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/library"
+                android:id="@+id/library"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/b_color"
+                android:shadowColor="@color/button_shadow"
+                android:onClick="defaultToast"
+                android:textColor="@android:color/primary_text_light" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="XYZ Reader"
-            android:id="@+id/xyz"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#ff3dcedd"
-            android:shadowColor="#ff061930"
-            android:onClick="defaultToast"
-            android:textColor="@android:color/primary_text_light" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/build"
+                android:id="@+id/build_it"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/b_color"
+                android:shadowColor="@color/button_shadow"
+                android:onClick="defaultToast"
+                android:textColor="@android:color/primary_text_light" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Capstone: My Own App"
-            android:id="@+id/capstone"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#ffff4364"
-            android:shadowColor="#ff061930"
-            android:onClick="defaultToast"
-            android:textColor="@android:color/primary_text_light" />
-    </LinearLayout>
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/xyz"
+                android:id="@+id/xyz"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/b_color"
+                android:shadowColor="@color/button_shadow"
+                android:onClick="defaultToast"
+                android:textColor="@android:color/primary_text_light" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/capstone"
+                android:id="@+id/capstone"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/b_action_color"
+                android:shadowColor="@color/button_shadow"
+                android:onClick="defaultToast"
+                android:textColor="@android:color/primary_text_light" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

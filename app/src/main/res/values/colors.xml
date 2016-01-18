@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button_shadow" type="color">#ff061930</item>
+    <item name="b_color" type="color">#ff3dcedd</item>
+    <item name="b_action_color" type="color">#ffff4364</item>
+
+
+
+</resources>

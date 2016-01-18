@@ -1,5 +1,6 @@
 package crappydayproductions.com.nanodegreeprogram;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -42,6 +43,12 @@ public class MainActivity extends ActionBarActivity {
     public void defaultToast(View view) {
 
         Toast.makeText(MainActivity.this,"This will probably do something in the future!.....",Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void movieScreen(View view) {
+
+        startActivity(new Intent(this, Movies.class));
 
     }
 
